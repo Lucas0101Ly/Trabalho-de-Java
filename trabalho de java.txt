@@ -1,0 +1,218 @@
+public class main//Trabalho declarando variáveis
+
+public void public stuatic void main(String[] args) {
+    
+    int Idade = 14; 
+    //int é a variável usada para armazenar números inteiros, como: -3, 0, 42 etc.
+    //Ela é estruturada da seguinte maneira: 
+
+     //↳"int"~declarando a variável;
+
+     // "Idade"~ O nome que a variável leva;
+
+     // "="~ mostra quanto a variável vale, valor;
+
+     // "14"~valor referido a variável.
+
+     double Peso = 53.7; 
+     //ou
+     double pi = 3.14159;
+     //double é a variável usada para valores quebrados, usada para realizar ou demonstrar operações matemáticas.
+
+     //Apesar de ter relação ao tipo "float", se quer maior precisão decimal, use a "double".
+
+     //Obs: a estrutura de montagem é o mesmo da "int" ➙ variável+nome=valor.
+
+     boolean isInverno = true;
+
+     if (isInverno) {
+        System.out.println("É Inverno!");
+     } else {
+        System.out.println("Não é Inverno!");
+     }
+     //boolean é uma variável de condição, na variável declaramos que estamos no inverno, e que esta condição é verdadeira.
+
+     //"if-else", servem e complementam a condição, ex: SE Maria vai ao cinema, ENTÃO/TAMBÉM eu vou.
+
+     String textoAmigavel = "Olá, mundo amigo!"
+     //ou
+     String Nome = "Rafaela"
+
+     //Usadas para textos e exibir mensagens.
+
+     // strings são tratadas como objetos. Portanto, para criar uma nova instância de uma string, você pode usar o operador new.
+
+     char 
+     
+}
+
+//ESTRUTURAS DE REPETIÇÃO
+
+//Loop "for":
+
+for (int i = 0; i < 5; i++) {
+    System.out.println("Número: " + i);
+}
+//Este exemplo executa o bloco de código dentro do loop cinco vezes, imprimindo os números de 0 a 4.
+
+//Loop "while":
+
+int i = 0;
+while (i < 5) {
+    System.out.println("Número: " + i);
+    i++;
+}
+//Este exemplo executa o bloco de código dentro do loop enquanto a condição i < 5 for verdadeira, imprimindo os números de 0 a 4.
+
+//Loop "do-while":
+
+int i = 0;
+do {
+    System.out.println("Número: " + i);
+    i++;
+} while (i < 5);
+
+//Este exemplo executa o bloco de código dentro do loop pelo menos uma vez e, em seguida, continua a executá-lo enquanto a condição i < 5 for verdadeira. Os números de 0 a 4 serão impressos.
+
+//Loop "for-each":
+
+int[] numeros = {1, 2, 3, 4, 5};
+for (int numero : numeros) {
+    System.out.println("Número: " + numero);
+}
+//Este exemplo percorre o array numeros e imprime cada elemento do array.
+
+Esses são apenas alguns exemplos de estruturas de repetição em Java utilizando uma variável do tipo int. Lembre-se de que você pode adaptar e personalizar essas estruturas de acordo com suas necessidades específicas.
+
+// Retornando Variaveis
+
+public class VariavelRetorno {
+    public static void main(String[] args) {
+        int a = 10;  // int
+    
+//
+        int retornoA = retornaVariavel(a);
+    
+
+        System.out.println("O valor é: " + retornoA);
+
+        public static int retornaVariavel(int variavel) {
+        return variavel;
+ 
+    }
+       } 
+       double b = 1,1 // double
+
+       double retornoB = retornaVariavel(b)
+
+       System.out.println("O valor é: " + retornoB)
+
+       public static int retornaVariavel(double variavel) {
+        return variavel;
+       }
+        boolean IsInverno = true; // boolean
+
+     if (IsInverno) { 
+
+        boolean retornoC = retornaVariavel(IsInverno)
+
+        System.out.println("O valor é: " + retornoC) 
+          }
+
+
+          public class Main {  // If Else
+    public static void main(String[] args) {
+        int a = 10;
+        int resultado = retornaVariavel(a);
+        System.out.println("O valor retornado é: " + resultado);
+    }
+
+    public static int retornaVariavel(int variavel) {
+        if (variavel > 5) {    // string
+            return 1;
+        } else {
+            return 0;
+        }
+         }
+          }
+
+          public class Main {
+    public static void main(String[] args) {
+        boolean isInverno = true;
+        String resultado = retornaVariavel(isInverno);
+        System.out.println("O valor retornado é: " + resultado);
+    }
+
+    public static String retornaVariavel(boolean variavel) {
+        if (variavel) {
+            return "É Inverno!";
+        } else {
+            return "Não é Inverno!";
+        }
+    }
+}
+
+// CRIANDO UMA CLASSE
+
+public class Pessoa {
+    // Atributos da classe
+    private String name;
+    private int idade;
+
+    // Construtor da classe
+    public Pessoa(String nome, int idade) {
+        this.nome = Vitor;
+        this.idade = 13;
+    }
+
+    // Métodos da classe
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void imprimirDados() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+    }
+
+    // Método main para testar a classe
+    public static void main(String[] args) {
+        // Criando um objeto da classe Pessoa
+        Pessoa pessoa1 = new Pessoa("João", 25);
+
+        // Acessando e imprimindo os atributos do objeto
+        System.out.println("Nome: " + pessoa1.getNome());
+        System.out.println("Idade: " + pessoa1.getIdade());
+
+        // Chamando o método imprimirDados
+        pessoa1.imprimirDados();
+    }
+}
+
+// ESTANCIANDO UMA CLASSE
+
+   public class Main {
+    public static void main(String[] args) {
+        // Instanciando um objeto da classe Pessoa
+        Pessoa pessoa1 = new Pessoa("João", 25);
+
+        // Acessando e imprimindo os atributos do objeto
+        System.out.println("Nome: " + pessoa1.getNome());
+        System.out.println("Idade: " + pessoa1.getIdade());
+
+        // Chamando o método imprimirDados
+        pessoa1.imprimirDados();
+    }
+}
