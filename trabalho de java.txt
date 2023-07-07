@@ -1,7 +1,11 @@
-public class main//Trabalho declarando variáveis
+public class main//Trabalho declarando variáveis em java
 
-public void public stuatic void main(String[] args) {
+public void public static void main(String[] args) {
     
+
+
+//VARIAVEIS
+
     int Idade = 14; 
     //int é a variável usada para armazenar números inteiros, como: -3, 0, 42 etc.
     //Ela é estruturada da seguinte maneira: 
@@ -15,7 +19,7 @@ public void public stuatic void main(String[] args) {
      // "14"~valor referido a variável.
 
      double Peso = 53.7; 
-     //ou
+     //ou, outro exemplo:
      double pi = 3.14159;
      //double é a variável usada para valores quebrados, usada para realizar ou demonstrar operações matemáticas.
 
@@ -40,49 +44,148 @@ public void public stuatic void main(String[] args) {
 
      //Usadas para textos e exibir mensagens.
 
-     // strings são tratadas como objetos. Portanto, para criar uma nova instância de uma string, você pode usar o operador new.
+     // Strings são tratadas como objetos. Portanto, para criar uma nova instância de uma string, você pode usar o operador new.
 
-     char 
+     char letra = 'A';
+     //ou
+     char numero = 65;
+
+     System.out.println(numero);
+     //char se refere a um caractere, "letra" que geralmente é printado na tela.
      
-}
+     //No caso da char numero, é usado o Unicode 65, que na tabela representa a letra "A".
+     //obs: a variável char utiliza aspas simples 'estas'.
+
+
+
+//ARRAYS
+
+     int[] numeos = {10, 20, 30, 40, 50};
+
+     //ou
+
+     int[] numeros = new int[5];
+     //criamos um array com tamanho 5, "new" é o nome da classe que desejamos instanciar/inicializar o objeto.
+     numeros[0]= 10;
+     numeros[1]= 20;
+     numeros[2]= 30;
+     numeros[3]= 40;
+     numeros[4]= 50;
+     //as posições das arrays(proprio nome ja diz= variedade ou Ordem) começam sempre do 0 e vão até determinado tamanho.
+
+     //A array "numeros[0]" é a primeira posição e assim por diante.
+
+     double[] pesos= {1.5, 2.7, 3.9, 4.1, 5.3};
+
+     //ou
+
+     double[] pesos = new double[5];
+     //obs: Segue o mesmo padrão da "int" acima.
+     pesos[0]= 1.5;
+     pesos[1]= 2.7;
+     pesos[2]= 3.9;
+     pesos[3]= 4.1;
+     pesos[4]= 5.3;
+
+     boolean[] perguntas= {true, false, true, true, false};
+
+     //ou
+
+     boolean[] perguntas = new boolean[5];
+     perguntas[0]= true;
+     perguntas[1]=  false;
+     perguntas[2]= true;
+     perguntas[3]= true;
+     perguntas[4]=false;
+
+     String[] nomes= {"Think-Wink", "Dipsy", "La-La", "Pô"};   
+
+     //ou
+
+     String[] nomes= new String[4];
+    nomes[0]= "Think-Wink";
+    nomes[1]= "Dipsy";
+    nomes[2]= "La-La";
+    nomes[3]= "Pô";
+
+    char[] letras = {'A', 'B', 'C', 'D' };
+
+    //ou
+
+    char[] letras= new char[4];
+    letras[0]= 'A';
+    letras[1]= 'B';
+    letras[2]= 'C';
+    letras[3]= 'D';
+
 
 //ESTRUTURAS DE REPETIÇÃO
 
-//Loop "for":
-
-for (int i = 0; i < 5; i++) {
-    System.out.println("Número: " + i);
-}
-//Este exemplo executa o bloco de código dentro do loop cinco vezes, imprimindo os números de 0 a 4.
-
-//Loop "while":
-
-int i = 0;
-while (i < 5) {
-    System.out.println("Número: " + i);
-    i++;
-}
-//Este exemplo executa o bloco de código dentro do loop enquanto a condição i < 5 for verdadeira, imprimindo os números de 0 a 4.
-
-//Loop "do-while":
-
-int i = 0;
-do {
-    System.out.println("Número: " + i);
-    i++;
-} while (i < 5);
-
-//Este exemplo executa o bloco de código dentro do loop pelo menos uma vez e, em seguida, continua a executá-lo enquanto a condição i < 5 for verdadeira. Os números de 0 a 4 serão impressos.
-
-//Loop "for-each":
-
-int[] numeros = {1, 2, 3, 4, 5};
-for (int numero : numeros) {
+    //Loop "for":
+    
+    for (int i = 0; i < 5; i++) {
+        System.out.println("Número: " + i);
+    }
+    //Este exemplo executa o bloco de código dentro do loop cinco vezes, imprimindo os números de 0 a 4.
+    
+    //Loop "while":
+    
+    int i = 0;
+    while (i < 5) {
+        System.out.println("Número: " + i);
+        i++;
+    }
+    //Este exemplo executa o bloco de código dentro do loop enquanto a condição i < 5 for verdadeira, imprimindo os números de 0 a 4.
+    
+    //Loop "do-while":
+    
+    int i = 0;
+    do {
+        System.out.println("Número: " + i);
+        i++;
+    } while (i < 5);
+    
+    //Este exemplo executa o bloco de código dentro do loop pelo menos uma vez e, em seguida, continua a executá-lo enquanto a condição i < 5 for verdadeira. Os números de 0 a 4 serão impressos.
+    
+    //Loop "for-each":
+    
+    int[] numeros = {1, 2, 3, 4, 5};
+    for (int numero : numeros) {
     System.out.println("Número: " + numero);
-}
-//Este exemplo percorre o array numeros e imprime cada elemento do array.
+   }
+   //Este exemplo percorre o array numeros e imprime cada elemento do array.
 
-Esses são apenas alguns exemplos de estruturas de repetição em Java utilizando uma variável do tipo int. Lembre-se de que você pode adaptar e personalizar essas estruturas de acordo com suas necessidades específicas.
+
+// IF e ELSE
+
+if (condição) {
+   // código a ser executado se a condição for verdadeira
+} else {
+   // código a ser executado se a condição for falsa
+}
+
+
+switch (expressão) {
+   case valor1:
+       // código a ser executado se a expressão for igual a valor1
+       break;
+   case valor2:
+       // código a ser executado se a expressão for igual a valor2
+       break;
+   // casos adicionais...
+   default:
+       // código a ser executado se a expressão não corresponder a nenhum valor
+       break;
+}
+
+
+//PRINTAR NO CONSOLE
+
+String nome = "Rafaela";
+int idade = 14;
+System.out.printf("Olá, meu nome é %s e tenho %d anos.", nome, idade);
+
+   }
 
 // Retornando Variaveis
 
